@@ -19,6 +19,8 @@ import { ProjectsComponent } from './projects/projects.component';
 import { PagesService } from '../pages/pages.service';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { ScheduleComponent } from './schedule/schedule.component';
+import { CalendarModule, DateAdapter } from 'angular-calendar';
+import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 
 
 @NgModule({
@@ -28,7 +30,7 @@ import { ScheduleComponent } from './schedule/schedule.component';
     ProjectsComponent,
     ProjectDetailsComponent,
     ScheduleComponent,
-   
+
   ],
 
 
@@ -46,7 +48,12 @@ import { ScheduleComponent } from './schedule/schedule.component';
     MatIconModule,
     MatListModule,
     LayoutModule,
-    MatExpansionModule
+    MatExpansionModule,
+    CalendarModule,
+    CalendarModule.forRoot({
+      provide: DateAdapter,
+      useFactory: adapterFactory,
+    }),
   ],
 
   providers: [PagesService],
