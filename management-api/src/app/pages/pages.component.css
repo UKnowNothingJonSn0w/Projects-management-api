@@ -1,0 +1,18 @@
+.navbar{
+    background-color: #fff;
+    padding-left: 30px;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 30%, rgba(252,69,252,1) 100%);
+
+}
+.navbar-collapse{
+    padding-top: 30px;
+}
+
+.end-buttons{
+    margin-right: 30px;
+}
+.navbar-light .navbar-nav .nav-link{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+color: #fff;
+}
