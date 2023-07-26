@@ -165,32 +165,47 @@
   ],
   "meetings": [
     {
-      "meeting_name": "Przykładowa Firma Sp. z o.o.",
-      "date": "ul. Przykładowa 123, 12-345 Warszawa",
-      "time": "+48 123 456 789",
-      "email": "biuro@przykladowafirma.pl",
-      "meeting_type": "Technologia informatyczna"
+      "meeting_name": "Sprint XYZ",
+      "date": "12.07.2023",
+      "time": "16:00",
+      "email": "biuro@it.pl",
+      "meeting_type": "Sprint",
+      "members": ["John Smith", "Michael Johnson"]
     },
     {
-      "meeting_name": "SuperProdukty s.c.",
-      "address": "ul. Handlowa 54, 45-678 Kraków",
-      "phone": "+48 987 654 321",
-      "email": "kontakt@superprodukty.pl",
-      "meeting_type": "Handel detaliczny"
+      "meeting_name": "Front-end",
+      "date": "01.08.2023",
+      "time": "13:00",
+      "email": "someone@gmail.com",
+      "meeting_type": "Recruitment",
+      "members": ["John Smith", "Michael Johnson"]
     },
     {
-      "meeting_name": "EkoEnergia Sp. z o.o.",
-      "address": "ul. Zielona 1, 67-890 Gdańsk",
-      "phone": "+48 555 555 555",
-      "email": "info@ekoenergia.pl",
-      "meeting_type": "Energia odnawialna"
+      "meeting_name": "Marketing campaign",
+      "date": "30.07.2023",
+      "time": "09:00",
+      "email": "info@marketing.pl",
+      "meeting_type": "Marketing",
+      "members": ["John Smith", "Michael Johnson"]
+
     },
     {
-      "meeting_name": "Finansowe Rozwiązania SA",
-      "address": "ul. Finansowa 9, 90-123 Łódź",
-      "phone": "+48 111 222 333",
+      "meeting_name": "Briefing",
+      "date": "10.08.2023",
+      "time": "11:30",
       "email": "kontakt@finansowezwiazania.pl",
-      "meeting_type": "Usługi finansowe"
+      "meeting_type": "Briefing",
+      "members": ["John Smith", "Michael Johnson"]
+
+    },
+    {
+      "meeting_name": "Board meeting",
+      "date": "01.08.2023",
+      "time": "12:00",
+      "email": "kontakt@finansowezwiazania.pl",
+      "meeting_type": "Board meeting",
+      "members": ["John Smith", "Michael Johnson"]
+
     }
   ]
 }

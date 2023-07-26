@@ -21,6 +21,9 @@ import { ProjectDetailsComponent } from './project-details/project-details.compo
 import { ScheduleComponent } from './schedule/schedule.component';
 import { CalendarModule, DateAdapter } from 'angular-calendar';
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
+import { AdministrationComponent } from './administration/administration.component';
+import { TodoComponent } from './todo/todo.component';
+import { ReportsComponent } from './reports/reports.component';
 
 
 @NgModule({
@@ -30,6 +33,9 @@ import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
     ProjectsComponent,
     ProjectDetailsComponent,
     ScheduleComponent,
+    AdministrationComponent,
+    TodoComponent,
+    ReportsComponent,
 
   ],
 
