@@ -33,7 +33,7 @@
       "team": ["John Smith", "Jane Doe"]
     },
     {
-      "id": 1,
+      "id": 5,
       "name": "ABC Project",
       "client": "Przykładowa Firma Sp. z o.o.",
       "start_date": "14.08.2021",
@@ -41,7 +41,7 @@
       "team": ["John Smith", "Jane Doe", "Michael Johnson"]
     },
     {
-      "id": 2,
+      "id": 6,
       "name": "CDE Project",
       "client": "SuperProdukty s.c.",
       "start_date": "14.08.2021",
@@ -49,7 +49,7 @@
       "team": ["Jane Doe", "Michael Johnson"]
     },
     {
-      "id": 3,
+      "id": 7,
       "name": "EFG Project",
       "client": "Finansowe Rozwiązania SA",
       "start_date": "14.08.2021",
@@ -57,7 +57,7 @@
       "team": ["John Smith", "Michael Johnson"]
     },
     {
-      "id": 4,
+      "id": 8,
       "name": "HIJ Project",
       "client": "EkoEnergia Sp. z o.o.",
       "start_date": "14.08.2021",
@@ -136,31 +136,61 @@
   "companies": [
     {
       "nazwa_firmy": "Przykładowa Firma Sp. z o.o.",
-      "adres": "ul. Przykładowa 123, 12-345 Warszawa",
-      "telefon": "+48 123 456 789",
+      "address": "ul. Przykładowa 123, 12-345 Warszawa",
+      "phone": "+48 123 456 789",
       "email": "biuro@przykladowafirma.pl",
-      "branza": "Technologia informatyczna"
+      "industry": "Technologia informatyczna"
     },
     {
       "nazwa_firmy": "SuperProdukty s.c.",
-      "adres": "ul. Handlowa 54, 45-678 Kraków",
-      "telefon": "+48 987 654 321",
+      "address": "ul. Handlowa 54, 45-678 Kraków",
+      "phone": "+48 987 654 321",
       "email": "kontakt@superprodukty.pl",
-      "branza": "Handel detaliczny"
+      "industry": "Handel detaliczny"
     },
     {
       "nazwa_firmy": "EkoEnergia Sp. z o.o.",
-      "adres": "ul. Zielona 1, 67-890 Gdańsk",
-      "telefon": "+48 555 555 555",
+      "address": "ul. Zielona 1, 67-890 Gdańsk",
+      "phone": "+48 555 555 555",
       "email": "info@ekoenergia.pl",
-      "branza": "Energia odnawialna"
+      "industry": "Energia odnawialna"
     },
     {
       "nazwa_firmy": "Finansowe Rozwiązania SA",
-      "adres": "ul. Finansowa 9, 90-123 Łódź",
-      "telefon": "+48 111 222 333",
+      "address": "ul. Finansowa 9, 90-123 Łódź",
+      "phone": "+48 111 222 333",
       "email": "kontakt@finansowezwiazania.pl",
-      "branza": "Usługi finansowe"
+      "industry": "Usługi finansowe"
+    }
+  ],
+  "meetings": [
+    {
+      "meeting_name": "Przykładowa Firma Sp. z o.o.",
+      "date": "ul. Przykładowa 123, 12-345 Warszawa",
+      "time": "+48 123 456 789",
+      "email": "biuro@przykladowafirma.pl",
+      "meeting_type": "Technologia informatyczna"
+    },
+    {
+      "meeting_name": "SuperProdukty s.c.",
+      "address": "ul. Handlowa 54, 45-678 Kraków",
+      "phone": "+48 987 654 321",
+      "email": "kontakt@superprodukty.pl",
+      "meeting_type": "Handel detaliczny"
+    },
+    {
+      "meeting_name": "EkoEnergia Sp. z o.o.",
+      "address": "ul. Zielona 1, 67-890 Gdańsk",
+      "phone": "+48 555 555 555",
+      "email": "info@ekoenergia.pl",
+      "meeting_type": "Energia odnawialna"
+    },
+    {
+      "meeting_name": "Finansowe Rozwiązania SA",
+      "address": "ul. Finansowa 9, 90-123 Łódź",
+      "phone": "+48 111 222 333",
+      "email": "kontakt@finansowezwiazania.pl",
+      "meeting_type": "Usługi finansowe"
     }
   ]
 }

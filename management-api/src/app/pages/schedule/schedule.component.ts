@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CalendarEvent, CalendarMonthViewDay } from 'angular-calendar';
-import { addDays, startOfDay } from 'date-fns';
+import { addDays, addMonths, startOfDay, startOfMonth, subMonths } from 'date-fns';
 
 @Component({
   selector: 'app-schedule',
@@ -12,7 +12,6 @@ export class ScheduleComponent {
   events: CalendarEvent[] = [];
 
   constructor() {
-    // Dodaj przykładowe wydarzenia do wyświetlenia na harmonogramie
     this.events = [
       {
         title: 'Przykładowe wydarzenie 1',
@@ -29,13 +28,18 @@ export class ScheduleComponent {
         start: startOfDay(addDays(new Date(), 2)),
         color: { primary: '#e3bc08', secondary: '#FDF1BA' }
       }
-      // Możesz dodać więcej wydarzeń w podobny sposób
     ];
   }
 
-  // Ta funkcja zostanie wywołana, gdy użytkownik kliknie na konkretny dzień na harmonogramie
   dayClicked(day: CalendarMonthViewDay): void {
     console.log('Kliknięto dzień: ', day);
-    // Tutaj możesz obsłużyć zdarzenie po kliknięciu na dzień w harmonogramie
   }
+  previousMonth(): void {
+    this.viewDate = subMonths(this.viewDate, 1);
+  }
+
+  nextMonth(): void {
+    this.viewDate = addDays(startOfMonth(addMonths(this.viewDate, 1)), 1);
+  }
+
 }

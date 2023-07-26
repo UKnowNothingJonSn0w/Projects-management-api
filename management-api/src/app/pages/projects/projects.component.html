@@ -1,17 +1,6 @@
 <div class="main-content">
     <h1> All projects</h1>
 </div>
-<!--<div class="row">
-    <div class="col-sm project-details" *ngFor="let project of projects">
-      <div class="project-name">Project name: {{project.name}}</div>
-      <div class="project-client">Project client: {{project.client}}</div>
-      <div class="project-start">Project start-date: {{project.start_date}}</div>
-      <div class="project-end">Project end-date: {{project.end_date}}</div>
-      <div class="project-team">Team members: {{project.team}}</div>
-        <button type="button" class="btn btn-outline-info">Info</button>
-    </div>
-</div>-->
-
 <table class="table">
     <thead>
       <tr>
@@ -19,7 +8,6 @@
         <th>Project client</th>
         <th>Project start-date</th>
         <th>Project end-date</th>
-        <th>Team members</th>
         <th>Info</th>
       </tr>
     </thead>
@@ -29,8 +17,9 @@
         <td>{{ project.client }}</td>
         <td>{{ project.start_date }}</td>
         <td>{{ project.end_date }}</td>
-        <td>{{ project.team }}</td>
-        <td><button type="button" class="btn btn-outline-info">Details</button></td>
+        <td>
+            <button type="button" class="details" [routerLink]="['/project-details', project.id]">
+                Details</button></td>
       </tr>
     </tbody>
   </table>
