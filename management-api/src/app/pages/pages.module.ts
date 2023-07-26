@@ -17,6 +17,8 @@ import {LayoutModule} from '@angular/cdk/layout';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { ProjectsComponent } from './projects/projects.component';
 import { PagesService } from '../pages/pages.service';
+import { ProjectDetailsComponent } from './project-details/project-details.component';
+import { ScheduleComponent } from './schedule/schedule.component';
 
 
 @NgModule({
@@ -24,6 +26,8 @@ import { PagesService } from '../pages/pages.service';
     PagesComponent,
     HomeComponent,
     ProjectsComponent,
+    ProjectDetailsComponent,
+    ScheduleComponent,
    
   ],
 

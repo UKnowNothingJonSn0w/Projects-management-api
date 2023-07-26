@@ -3,34 +3,66 @@
     {
       "id": 1,
       "name": "ABC Project",
-      "client": "ABC Client",
+      "client": "Przykładowa Firma Sp. z o.o.",
       "start_date": "14.08.2021",
       "end_date": "20.11.2021",
-      "team": "John Smith"
+      "team": ["John Smith", "Jane Doe", "Michael Johnson"]
     },
     {
       "id": 2,
       "name": "CDE Project",
-      "client": "CDE Client",
+      "client": "SuperProdukty s.c.",
       "start_date": "14.08.2021",
       "end_date": "20.11.2021",
-      "team": "John Smith"
+      "team": ["Jane Doe", "Michael Johnson"]
     },
     {
       "id": 3,
       "name": "EFG Project",
-      "client": "EFG Client",
+      "client": "Finansowe Rozwiązania SA",
       "start_date": "14.08.2021",
       "end_date": "20.11.2021",
-      "team": "John Smith"
+      "team": ["John Smith", "Michael Johnson"]
     },
     {
       "id": 4,
       "name": "HIJ Project",
-      "client": "HIJ Clientt",
+      "client": "EkoEnergia Sp. z o.o.",
       "start_date": "14.08.2021",
       "end_date": "20.11.2021",
-      "team": "John Smith"
+      "team": ["John Smith", "Jane Doe"]
+    },
+    {
+      "id": 1,
+      "name": "ABC Project",
+      "client": "Przykładowa Firma Sp. z o.o.",
+      "start_date": "14.08.2021",
+      "end_date": "20.11.2021",
+      "team": ["John Smith", "Jane Doe", "Michael Johnson"]
+    },
+    {
+      "id": 2,
+      "name": "CDE Project",
+      "client": "SuperProdukty s.c.",
+      "start_date": "14.08.2021",
+      "end_date": "20.11.2021",
+      "team": ["Jane Doe", "Michael Johnson"]
+    },
+    {
+      "id": 3,
+      "name": "EFG Project",
+      "client": "Finansowe Rozwiązania SA",
+      "start_date": "14.08.2021",
+      "end_date": "20.11.2021",
+      "team": ["John Smith", "Michael Johnson"]
+    },
+    {
+      "id": 4,
+      "name": "HIJ Project",
+      "client": "EkoEnergia Sp. z o.o.",
+      "start_date": "14.08.2021",
+      "end_date": "20.11.2021",
+      "team": ["John Smith", "Jane Doe"]
     }
   ],
   "users": [
@@ -99,6 +131,36 @@
       "firstname": "Marcia",
       "lastname": "Davenport",
       "department": "Marketing"
+    }
+  ],
+  "companies": [
+    {
+      "nazwa_firmy": "Przykładowa Firma Sp. z o.o.",
+      "adres": "ul. Przykładowa 123, 12-345 Warszawa",
+      "telefon": "+48 123 456 789",
+      "email": "biuro@przykladowafirma.pl",
+      "branza": "Technologia informatyczna"
+    },
+    {
+      "nazwa_firmy": "SuperProdukty s.c.",
+      "adres": "ul. Handlowa 54, 45-678 Kraków",
+      "telefon": "+48 987 654 321",
+      "email": "kontakt@superprodukty.pl",
+      "branza": "Handel detaliczny"
+    },
+    {
+      "nazwa_firmy": "EkoEnergia Sp. z o.o.",
+      "adres": "ul. Zielona 1, 67-890 Gdańsk",
+      "telefon": "+48 555 555 555",
+      "email": "info@ekoenergia.pl",
+      "branza": "Energia odnawialna"
+    },
+    {
+      "nazwa_firmy": "Finansowe Rozwiązania SA",
+      "adres": "ul. Finansowa 9, 90-123 Łódź",
+      "telefon": "+48 111 222 333",
+      "email": "kontakt@finansowezwiazania.pl",
+      "branza": "Usługi finansowe"
     }
   ]
 }
