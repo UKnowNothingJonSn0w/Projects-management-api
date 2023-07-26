@@ -1,8 +1,8 @@
 .navbar{
     background-color: #fff;
     padding-left: 30px;
-    background: linear-gradient(90deg, rgba(131,58,180,1) 30%, rgba(252,69,252,1) 100%);
-
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 10%, rgba(177,62,207,1) 100%, rgba(252,69,252,1) 100%);
 }
 .navbar-collapse{
     padding-top: 30px;

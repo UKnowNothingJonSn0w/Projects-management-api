@@ -8,6 +8,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ModalModule } from 'ngx-bootstrap/modal';
+//import { PagesService } from './pages/pages.service';
 
 
 @NgModule({
@@ -22,7 +23,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     NgbModule,
     ModalModule.forRoot(),
   ],
-  providers: [],
+  //providers: [PagesService],
   declarations: [AppComponent],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

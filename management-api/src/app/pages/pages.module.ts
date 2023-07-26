@@ -15,12 +15,15 @@ import { MatListModule } from '@angular/material/list';
 //import { FlexLayoutModule } from '@angular/flex-layout';
 import {LayoutModule} from '@angular/cdk/layout';
 import {MatExpansionModule} from '@angular/material/expansion';
+import { ProjectsComponent } from './projects/projects.component';
+import { PagesService } from '../pages/pages.service';
 
 
 @NgModule({
   declarations: [
     PagesComponent,
     HomeComponent,
+    ProjectsComponent,
    
   ],
 
@@ -42,7 +45,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatExpansionModule
   ],
 
-  providers: [],
+  providers: [PagesService],
   bootstrap: [PagesComponent],
 })
 export class PagesModule {}

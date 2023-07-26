@@ -1,0 +1,104 @@
+{
+  "project": [
+    {
+      "id": 1,
+      "name": "ABC Project",
+      "client": "ABC Client",
+      "start_date": "14.08.2021",
+      "end_date": "20.11.2021",
+      "team": "John Smith"
+    },
+    {
+      "id": 2,
+      "name": "CDE Project",
+      "client": "CDE Client",
+      "start_date": "14.08.2021",
+      "end_date": "20.11.2021",
+      "team": "John Smith"
+    },
+    {
+      "id": 3,
+      "name": "EFG Project",
+      "client": "EFG Client",
+      "start_date": "14.08.2021",
+      "end_date": "20.11.2021",
+      "team": "John Smith"
+    },
+    {
+      "id": 4,
+      "name": "HIJ Project",
+      "client": "HIJ Clientt",
+      "start_date": "14.08.2021",
+      "end_date": "20.11.2021",
+      "team": "John Smith"
+    }
+  ],
+  "users": [
+    {
+      "id": "57c54904d9857a5c991b761b",
+      "firstname": "Sampson",
+      "lastname": "Cunningham",
+      "department": "Finance"
+    },
+    {
+      "id": "57c54904b5a930d9d439401a",
+      "firstname": "Dorsey",
+      "lastname": "Casey",
+      "department": "Sales"
+    },
+    {
+      "id": "57c54904124bc5a6bf6a12b3",
+      "firstname": "Janna",
+      "lastname": "Mcpherson",
+      "department": "Marketing"
+    },
+    {
+      "id": "57c549042010262cd93ca050",
+      "firstname": "Jolene",
+      "lastname": "Vargas",
+      "department": "IT"
+    },
+    {
+      "id": "57c5490425d492b32751578f",
+      "firstname": "Tabitha",
+      "lastname": "Riddle",
+      "department": "HR"
+    },
+    {
+      "id": "57c54904b87656d752428438",
+      "firstname": "Wong",
+      "lastname": "Wilkinson",
+      "department": "CEO"
+    },
+    {
+      "id": "57c549049d1621b78fb1a0d9",
+      "firstname": "Witt",
+      "lastname": "Dunlap",
+      "department": "IT"
+    },
+    {
+      "id": "57c54904c2a8ad46521be438",
+      "firstname": "Romero",
+      "lastname": "Blair",
+      "department": "IT"
+    },
+    {
+      "id": "57c549045b04d5b4dc9a1e74",
+      "firstname": "Lilly",
+      "lastname": "Fernandez",
+      "department": "Marketing"
+    },
+    {
+      "id": "57c54904e08f29421ad4c47f",
+      "firstname": "Keisha",
+      "lastname": "Mayer",
+      "department": "Sales"
+    },
+    {
+      "id": "57c54904d7c2a226cca81240",
+      "firstname": "Marcia",
+      "lastname": "Davenport",
+      "department": "Marketing"
+    }
+  ]
+}
