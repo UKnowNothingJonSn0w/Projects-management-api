@@ -19,4 +19,8 @@ export class PagesService {
             })
         )
     };
+    
+    loadMeetings(): Observable<any[]> {
+        return this.http.get<any[]>('http://localhost:3000/meetings');
+      }
 }
