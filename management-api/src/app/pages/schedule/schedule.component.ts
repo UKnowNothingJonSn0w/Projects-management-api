@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, TemplateRef } from '@angular/core';
 import { CalendarEvent, CalendarMonthViewDay } from 'angular-calendar';
 import { addDays, addMonths, startOfDay, startOfMonth, subMonths } from 'date-fns';
 import { PagesService } from '../pages.service';
 import { Router } from '@angular/router';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-schedule',
@@ -13,15 +14,27 @@ export class ScheduleComponent implements OnInit{
   viewDate: Date = new Date();
   events: CalendarEvent[] = [];
   meetings: any[] = [];
+  modalEvent: CalendarEvent<any> | undefined;
+
+  modalData: { action: string; event: CalendarEvent } | undefined;
+
+  @ViewChild('eventModal', { static: true }) eventModal!: TemplateRef<any>;
 
   constructor(
     private PagesService: PagesService,
     private router: Router,
+    private modalService: NgbModal
   ) { }
 
   ngOnInit(): void {
     this.loadMeetings();
   }
+
+  openModal(eventData: { event: CalendarEvent<any>; sourceEvent: MouseEvent | KeyboardEvent }): void {
+    this.modalEvent = eventData.event;
+    this.modalService.open(this.eventModal, { centered: true });
+  }
+  
 
   loadMeetings(): void {
     this.PagesService.loadMeetings().subscribe(
@@ -29,7 +42,7 @@ export class ScheduleComponent implements OnInit{
         this.meetings = meetings.map((meeting) => ({
           title: meeting.meeting_name,
           start: this.parseDate(meeting.date, meeting.time),
-          color: { primary: '#ad2121', secondary: '#FAE3E3' } // Kolor możesz zmienić na dowolny, może być również dynamiczny zależnie od meeting_type itp.
+          color: { primary: '#ad2121', secondary: '#FAE3E3' }
         }));
         this.events = this.meetings;
       },
