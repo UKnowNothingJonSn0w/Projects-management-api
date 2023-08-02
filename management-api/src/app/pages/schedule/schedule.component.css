@@ -25,5 +25,21 @@ h3 {
 padding: 10px 10px;
 font-family: 'Montserrat', sans-serif;
 font-weight: 500;
+}
 
+.add-meeting{
+    margin-top: 30px;
+    margin-left: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px 10px;
+    border: 1px solid;
+    border-color: #ac21cf;
+    color: #ac21cf;
+    font-family: 'Montserrat', sans-serif;
+font-weight: 500;
+}
+.add-meeting:hover{
+    background-color: #ac21cf;
+    color: #fff;
 }

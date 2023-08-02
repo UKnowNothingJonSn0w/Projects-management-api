@@ -2,7 +2,6 @@
 .main-content {
     background: rgb(131, 58, 180);
     background: linear-gradient(90deg, rgba(131, 58, 180, 1) 10%, rgba(177, 62, 207, 1) 100%, rgba(252, 69, 252, 1) 100%);
-    height: 100vh;
 }
 
 .main-content h1 {
@@ -11,4 +10,20 @@
     padding-top: 200px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+    padding-bottom: 30px;
+}
+.details{
+    color: #000;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.details p{
+    font-weight: 700;
+}
+.details span{
+    font-weight: 500;
 }

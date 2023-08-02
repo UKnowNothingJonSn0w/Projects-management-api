@@ -5,6 +5,9 @@ import { HomeComponent } from './home/home.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
+import { TodoComponent } from './todo/todo.component';
+import { ReportsComponent } from './reports/reports.component';
+import { AdministrationComponent } from './administration/administration.component';
 
 const routes: Routes = [
   {
@@ -16,7 +19,9 @@ const routes: Routes = [
       { path: 'projects', component: ProjectsComponent },
       { path: 'project-details/:id', component: ProjectDetailsComponent },
       { path: 'schedule', component: ScheduleComponent },
-
+      { path: 'todo', component: TodoComponent },
+      { path: 'reports', component: ReportsComponent },
+      { path: 'administration', component: AdministrationComponent },
     ],
   },
 ];

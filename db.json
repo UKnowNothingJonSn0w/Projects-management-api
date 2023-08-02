@@ -6,7 +6,9 @@
       "client": "Przykładowa Firma Sp. z o.o.",
       "start_date": "14.08.2021",
       "end_date": "20.11.2021",
-      "team": ["John Smith", "Jane Doe", "Michael Johnson"]
+      "team": ["John Smith", "Jane Doe", "Michael Johnson"],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus vitae congue mauris rhoncus aenean vel elit scelerisque. Augue neque gravida in fermentum et sollicitudin. "
+
     },
     {
       "id": 2,
@@ -14,7 +16,9 @@
       "client": "SuperProdukty s.c.",
       "start_date": "14.08.2021",
       "end_date": "20.11.2021",
-      "team": ["Jane Doe", "Michael Johnson"]
+      "team": ["Jane Doe", "Michael Johnson"],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus vitae congue mauris rhoncus aenean vel elit scelerisque. Augue neque gravida in fermentum et sollicitudin. "
+
     },
     {
       "id": 3,
@@ -22,7 +26,9 @@
       "client": "Finansowe Rozwiązania SA",
       "start_date": "14.08.2021",
       "end_date": "20.11.2021",
-      "team": ["John Smith", "Michael Johnson"]
+      "team": ["John Smith", "Michael Johnson"],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus vitae congue mauris rhoncus aenean vel elit scelerisque. Augue neque gravida in fermentum et sollicitudin. "
+
     },
     {
       "id": 4,
@@ -30,7 +36,9 @@
       "client": "EkoEnergia Sp. z o.o.",
       "start_date": "14.08.2021",
       "end_date": "20.11.2021",
-      "team": ["John Smith", "Jane Doe"]
+      "team": ["John Smith", "Jane Doe"],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus vitae congue mauris rhoncus aenean vel elit scelerisque. Augue neque gravida in fermentum et sollicitudin. "
+
     },
     {
       "id": 5,
@@ -38,7 +46,9 @@
       "client": "Przykładowa Firma Sp. z o.o.",
       "start_date": "14.08.2021",
       "end_date": "20.11.2021",
-      "team": ["John Smith", "Jane Doe", "Michael Johnson"]
+      "team": ["John Smith", "Jane Doe", "Michael Johnson"],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus vitae congue mauris rhoncus aenean vel elit scelerisque. Augue neque gravida in fermentum et sollicitudin. "
+
     },
     {
       "id": 6,
@@ -46,7 +56,9 @@
       "client": "SuperProdukty s.c.",
       "start_date": "14.08.2021",
       "end_date": "20.11.2021",
-      "team": ["Jane Doe", "Michael Johnson"]
+      "team": ["Jane Doe", "Michael Johnson"],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus vitae congue mauris rhoncus aenean vel elit scelerisque. Augue neque gravida in fermentum et sollicitudin. "
+
     },
     {
       "id": 7,
@@ -54,7 +66,9 @@
       "client": "Finansowe Rozwiązania SA",
       "start_date": "14.08.2021",
       "end_date": "20.11.2021",
-      "team": ["John Smith", "Michael Johnson"]
+      "team": ["John Smith", "Michael Johnson"],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus vitae congue mauris rhoncus aenean vel elit scelerisque. Augue neque gravida in fermentum et sollicitudin. "
+
     },
     {
       "id": 8,
@@ -62,7 +76,8 @@
       "client": "EkoEnergia Sp. z o.o.",
       "start_date": "14.08.2021",
       "end_date": "20.11.2021",
-      "team": ["John Smith", "Jane Doe"]
+      "team": ["John Smith", "Jane Doe"],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus vitae congue mauris rhoncus aenean vel elit scelerisque. Augue neque gravida in fermentum et sollicitudin. "
     }
   ],
   "users": [

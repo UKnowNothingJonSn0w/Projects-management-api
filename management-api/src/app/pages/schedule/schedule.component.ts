@@ -42,7 +42,8 @@ export class ScheduleComponent implements OnInit{
         this.meetings = meetings.map((meeting) => ({
           title: meeting.meeting_name,
           start: this.parseDate(meeting.date, meeting.time),
-          color: { primary: '#ad2121', secondary: '#FAE3E3' }
+          type:  meeting.meeting_type,
+          members: meeting.members
         }));
         this.events = this.meetings;
       },

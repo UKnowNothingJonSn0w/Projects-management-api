@@ -1,9 +1,10 @@
 <div>
+  <button class="add-meeting">Add meeting</button>
   <div class="header">
     <h3>{{ viewDate | date: 'MMMM y' }}</h3>
     <div class="change-month">
-      <button (click)="previousMonth()">Poprzedni miesiąc</button>
-      <button (click)="nextMonth()">Następny miesiąc</button>
+      <button (click)="previousMonth()">Previous month</button>
+      <button (click)="nextMonth()">Next month</button>
     </div>
   </div>
   <mwl-calendar-month-view
@@ -23,13 +24,14 @@
   </div>
   <div class="modal-body">
     <div>
-      Event Title:
-      <h5>{{ modalEvent?.title }}</h5>
+      <h5>Meeting title:</h5>
+      {{ modalEvent?.title }}
     </div>
     <div>
       Event Start Date:
       <p>{{ modalEvent?.start | date: 'dd.MM.yyyy HH:mm' }}</p>
     </div>
+    
   </div>
   <div class="modal-footer">
     <button type="button" class="btn btn-outline-secondary" (click)="modal.dismiss('OK')">
