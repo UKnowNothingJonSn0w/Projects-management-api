@@ -22,7 +22,7 @@ export class ScheduleComponent implements OnInit{
   modalData: { action: string; event: CalendarEvent } | undefined;
 
   @ViewChild('eventModal', { static: true }) eventModal!: TemplateRef<any>;
-  @ViewChild('addMeetingModal', { static: true }) addMeetingModal!: TemplateRef<any>; // Add this line
+  @ViewChild('addMeetingModal', { static: true }) addMeetingModal!: TemplateRef<any>; 
 
   addMeetingForm!: FormGroup;
   get addMeetingF() { return this.addMeetingForm.controls; }
@@ -76,7 +76,7 @@ export class ScheduleComponent implements OnInit{
         this.events = this.meetings;
       },
       (error) => {
-        console.error('Błąd podczas pobierania danych ze spotkaniami.', error);
+        console.error('Error', error);
       }
     );
   }
@@ -90,7 +90,7 @@ export class ScheduleComponent implements OnInit{
   }
 
   dayClicked(day: CalendarMonthViewDay): void {
-    console.log('Kliknięto dzień: ', day);
+    console.log('Day: ', day);
   }
   previousMonth(): void {
    this.viewDate = subMonths(this.viewDate, 1);
@@ -114,9 +114,10 @@ export class ScheduleComponent implements OnInit{
         note: this.addMeetingF['note'].value,
       }
       this.PagesService.AddMeeting(json_data).subscribe(response => {
-           if (response.status == "success") {
-          }
-          console.log(response)
+         {
+          this.modalService.dismissAll('Close');
+          this.loadMeetings();
+        }
       })
     }
   }

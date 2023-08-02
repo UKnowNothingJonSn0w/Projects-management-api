@@ -27,24 +27,47 @@
     margin-right: 25px;
     margin-top: 20px;
 }
-table{
+
+table {
     max-width: 75%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
 }
-.details{
+
+.details {
     background: rgb(131, 58, 180);
     background: linear-gradient(90deg, rgba(131, 58, 180, 1) 10%, rgba(177, 62, 207, 1) 100%, rgba(252, 69, 252, 1) 100%);
     color: #fff;
     border-radius: 10px;
     border: none;
-padding: 10px 10px;
-font-family: 'Montserrat', sans-serif;
-font-weight: 500;
-font-size: 12px;
+    padding: 10px 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
 }
-  table{
-        overflow-wrap: anywhere;
-  }
-  
+
+table {
+    overflow-wrap: anywhere;
+}
+
+.add-project {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.add-project button {
+    background-color: #fff;
+    border: 1px solid;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding: 10px 10px;
+    border-color: #fff;
+}
+.add-project button:hover{
+    background-color: blueviolet;
+    color: #fff;
+    border-color: blueviolet;
+}
