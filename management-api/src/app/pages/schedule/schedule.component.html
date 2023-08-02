@@ -1,5 +1,5 @@
 <div>
-<button class="add-meeting" (click)="openAddMeetingModal()">Add meeting</button>
+  <button class="add-meeting" (click)="openAddMeetingModal()">Add meeting</button>
   <div class="header">
     <h3>{{ viewDate | date: 'MMMM y' }}</h3>
     <div class="change-month">
@@ -7,10 +7,7 @@
       <button (click)="nextMonth()">Next month</button>
     </div>
   </div>
-  <mwl-calendar-month-view
-    [viewDate]="viewDate"
-    [events]="events"
-    (dayClicked)="dayClicked($event.day)"
+  <mwl-calendar-month-view [viewDate]="viewDate" [events]="events" (dayClicked)="dayClicked($event.day)"
     (eventClicked)="openModal($event)">
   </mwl-calendar-month-view>
 </div>
@@ -31,7 +28,7 @@
       Event Start Date:
       <p>{{ modalEvent?.start | date: 'yyyy-MM-dd HH:mm' }}</p>
     </div>
-    
+
   </div>
   <div class="modal-footer">
     <button type="button" class="btn btn-outline-secondary" (click)="modal.dismiss('OK')">
@@ -48,60 +45,60 @@
     </button>
   </div>
   <div class="modal-body" *ngIf="!isloading">
-  <div class="form-div">
-    <div class="row">
-        <div class="col-lg-8 col-sm-10 form-div">
-           <form method="POST" [formGroup]="addMeetingForm" (ngSubmit)="addMeeting()">
+    <div class="form-div">
+      <div class="row">
+        <div class="col-lg-10 col-sm-12 form-div">
+          <form method="POST" [formGroup]="addMeetingForm" (ngSubmit)="addMeeting()">
             <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text">Meeting name</span>
-                </div>
-                <input type="text" class="form-control" formControlName="meeting_name">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Meeting name</span>
+              </div>
+              <input type="text" class="form-control" formControlName="meeting_name">
             </div>
             <div class="input-group mb-3">
               <div class="input-group-prepend">
-                  <span class="input-group-text">Meeting date</span>
+                <span class="input-group-text">Meeting date</span>
               </div>
               <input type="date" class="form-control" formControlName="date">
-          </div>
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <span class="input-group-text">Meeting time</span>
             </div>
-            <input type="time" class="form-control" formControlName="time">
-        </div>
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-              <span class="input-group-text">Meeting type</span>
-          </div>
-          <input type="text" class="form-control" formControlName="meeting_type">
-      </div>
-      <div class="input-group mb-3">
-        <div class="input-group-prepend">
-            <span class="input-group-text">Contact</span>
-        </div>
-        <input type="text" class="form-control" formControlName="email">
-    </div>
-    <div class="input-group mb-3">
-      <div class="input-group-prepend">
-          <span class="input-group-text">Note</span>
-      </div>
-      <input type="text" class="form-control" formControlName="note">
-  </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Meeting time</span>
+              </div>
+              <input type="time" class="form-control" formControlName="time">
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Meeting type</span>
+              </div>
+              <input type="text" class="form-control" formControlName="meeting_type">
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Contact</span>
+              </div>
+              <input type="text" class="form-control" formControlName="email">
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Note</span>
+              </div>
+              <input type="text" class="form-control" formControlName="note">
+            </div>
 
             <div class="add">
-                <button class="add-meeting" >
-                    Add meeting
-                </button>
+              <button class="add-meeting">
+                Add meeting
+              </button>
             </div>
-       </form>
-       </div>
+          </form>
+        </div>
+      </div>
     </div>
-    </div>
-    </div>
+  </div>
   <div class="modal-footer">
-    <button type="button" class="btn btn-outline-secondary" (click)="modal.dismiss('OK')">
-      OK
+    <button type="button" class="btn btn-outline-secondary" (click)="modal.dismiss('Cancel')">
+      Cancel
     </button>
   </div>
 </ng-template>

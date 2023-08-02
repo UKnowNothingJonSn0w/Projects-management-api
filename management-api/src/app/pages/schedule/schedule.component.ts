@@ -82,14 +82,10 @@ export class ScheduleComponent implements OnInit{
   }
 
   parseDate(date: string, time: string): Date {
-    // Split the date into year, month, and day
     const [year, month, day] = date.split('-').map(Number);
     
-    // Split the time into hours and minutes
     const [hours, minutes] = time.split(':').map(Number);
     
-    // Create a new JavaScript Date object
-    // Note: Months in JavaScript Date objects are zero-based (January is 0, February is 1, etc.)
     return new Date(year, month - 1, day, hours, minutes);
   }
 
