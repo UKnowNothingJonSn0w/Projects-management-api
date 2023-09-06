@@ -24,6 +24,7 @@ import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 import { AdministrationComponent } from './administration/administration.component';
 import { TodoComponent } from './todo/todo.component';
 import { ReportsComponent } from './reports/reports.component';
+import { NgChartsModule } from 'ng2-charts';
 
 
 @NgModule({
@@ -60,6 +61,7 @@ import { ReportsComponent } from './reports/reports.component';
       provide: DateAdapter,
       useFactory: adapterFactory,
     }),
+    NgChartsModule
   ],
 
   providers: [PagesService],

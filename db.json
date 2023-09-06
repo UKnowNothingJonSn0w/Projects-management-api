@@ -101,70 +101,74 @@
   ],
   "users": [
     {
-      "id": "57c54904d9857a5c991b761b",
-      "firstname": "Sampson",
-      "lastname": "Cunningham",
-      "department": "Finance"
-    },
-    {
       "id": "57c54904b5a930d9d439401a",
       "firstname": "Dorsey",
       "lastname": "Casey",
-      "department": "Sales"
+      "department": "Sales",
+      "start_date": "06.03.2020"
     },
     {
       "id": "57c54904124bc5a6bf6a12b3",
       "firstname": "Janna",
       "lastname": "Mcpherson",
-      "department": "Marketing"
+      "department": "Marketing",
+      "start_date": "16.08.2010"
     },
     {
       "id": "57c549042010262cd93ca050",
       "firstname": "Jolene",
       "lastname": "Vargas",
-      "department": "IT"
+      "department": "IT",
+      "start_date": "11.05.2023"
     },
     {
       "id": "57c5490425d492b32751578f",
       "firstname": "Tabitha",
       "lastname": "Riddle",
-      "department": "HR"
+      "department": "HR",
+      "start_date": "06.09.2021"
     },
     {
       "id": "57c54904b87656d752428438",
       "firstname": "Wong",
       "lastname": "Wilkinson",
-      "department": "CEO"
+      "department": "CEO",
+      "start_date": "24.09.2000"
     },
     {
       "id": "57c549049d1621b78fb1a0d9",
       "firstname": "Witt",
       "lastname": "Dunlap",
-      "department": "IT"
+      "department": "IT",
+      "start_date": "01.10.2022"
     },
     {
       "id": "57c54904c2a8ad46521be438",
       "firstname": "Romero",
       "lastname": "Blair",
-      "department": "IT"
+      "department": "IT",
+      "start_date": "19.01.2019"
     },
     {
       "id": "57c549045b04d5b4dc9a1e74",
       "firstname": "Lilly",
       "lastname": "Fernandez",
-      "department": "Marketing"
+      "department": "Marketing",
+      "start_date": "05.03.2021"
     },
     {
       "id": "57c54904e08f29421ad4c47f",
       "firstname": "Keisha",
       "lastname": "Mayer",
-      "department": "Sales"
+      "department": "Sales",
+      "start_date": "28.08.2023"
     },
     {
       "id": "57c54904d7c2a226cca81240",
       "firstname": "Marcia",
       "lastname": "Davenport",
-      "department": "Marketing"
+      "department": "Marketing",
+      "start_date": "08.11.2018"
     }
   ],
   "companies": [
@@ -293,6 +297,64 @@
       "email": "test3",
       "note": "test6",
       "id": "sREg789"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "1",
+      "task_name": "Naprawa błędu w module płatności",
+      "date": "2023-08-29",
+      "type": "Bugfix",
+      "completed": true,
+      "user": "Jolene Vargas"
+    },
+    {
+      "id": "2",
+      "task_name": "Przygotowanie materiałów marketingowych",
+      "date": "2023-08-30",
+      "type": "Marketing",
+      "completed": false,
+      "user": "Lilly Fernandez"
+    },
+    {
+      "id": "3",
+      "task_name": "Optymalizacja wydajności serwera",
+      "date": "2023-08-31",
+      "type": "Bugfix",
+      "completed": false,
+      "user": "Romero Blair"
+    },
+    {
+      "id": "4",
+      "task_name": "Aktualizacja strony internetowej",
+      "date": "2023-09-05",
+      "type": "Web Development",
+      "completed": false,
+      "user": "Witt Dunlap"
+    },
+    {
+      "id": "5",
+      "task_name": "Przygotowanie raportu miesięcznego",
+      "date": "2023-09-10",
+      "type": "Raporty",
+      "completed": false,
+      "user": "Dorsey Casey"
+    },
+    {
+      "id": "6",
+      "task_name": "Koordynacja kampanii reklamowej",
+      "date": "2023-09-15",
+      "type": "Marketing",
+      "completed": false,
+      "user": "Marcia Davenport"
+    },
+    {
+      "id": "7",
+      "task_name": "Testowanie nowej wersji oprogramowania",
+      "date": "2023-09-20",
+      "type": "Quality Assurance",
+      "completed": true,
+      "user": "Jolene Vargas"
     }
   ]
 }

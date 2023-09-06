@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ModalModule } from 'ngx-bootstrap/modal';
 //import { PagesService } from './pages/pages.service';
+import { NgChartsModule } from 'ng2-charts';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     BrowserAnimationsModule,
     NgbModule,
     ModalModule.forRoot(),
+    NgChartsModule
   ],
   //providers: [PagesService],
   declarations: [AppComponent],

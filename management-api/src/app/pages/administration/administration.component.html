@@ -1,1 +1,24 @@
-<p>administration works!</p>
+<div class="main-content">
+    <h1> Administration</h1>
+</div>
+<table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Last name</th>
+        <th>Start date</th>
+        <th>Department</th>
+        <th>Delete user</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.firstname }}</td>
+        <td>{{ user.lastname }}</td>
+        <td>{{ user.start_date }}</td>
+        <td>{{ user.department }}</td>
+        <td><button class="delete-user"(click)="deleteUser(user)">Usuń</button></td>
+    </tr>
+    </tbody>
+  </table>
+  

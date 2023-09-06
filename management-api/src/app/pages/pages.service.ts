@@ -36,4 +36,24 @@ export class PagesService {
         );
       }
 
+      loadUsers(): Observable<any[]> {
+        return this.http.get<any[]>('http://localhost:3000/users');
+      };
+
+      DeleteUser(userId: number): Observable<any> {
+        const url = `http://localhost:3000/users/${userId}`;
+        return this.http.delete<any>(url).pipe(
+          map(response => {
+            return response;
+          }),
+          catchError((error) => {
+            console.error('Error deleting user:', error);
+            return throwError('Something went wrong while deleting the user.');
+          })
+        );
+      }
+
+      LoadTasks(): Observable<any[]> {
+        return this.http.get<any[]>('http://localhost:3000/tasks');
+      };
 }
