@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, OnDestroy } from '@angular/core';
 import DatalabelsPlugin from 'chartjs-plugin-datalabels';
 import { ChartConfiguration, ChartData, ChartEvent, ChartType } from 'chart.js';
 import { BaseChartDirective } from 'ng2-charts';
@@ -8,7 +8,7 @@ import { BaseChartDirective } from 'ng2-charts';
   templateUrl: './reports.component.html',
   styleUrls: ['./reports.component.css']
 })
-export class ReportsComponent {
+export class ReportsComponent implements OnDestroy {
 
   @ViewChild(BaseChartDirective) chart: BaseChartDirective | undefined;
 
@@ -38,6 +38,14 @@ export class ReportsComponent {
   };
   public pieChartType: ChartType = 'pie';
   public pieChartPlugins = [DatalabelsPlugin];
+
+  constructor() { }
+
+  ngOnDestroy(): void {
+    if (this.chart && this.chart.chart) {
+      this.chart.chart.destroy();
+    }
+  }
 
   public chartClicked({
     event,
@@ -79,7 +87,6 @@ export class ReportsComponent {
       'chimney',
       'crack',
       'hall',
-  
     ];
     const randomWord = () => words[Math.trunc(Math.random() * words.length)];
     this.pieChartData.labels = new Array(3).map((_) => randomWord());

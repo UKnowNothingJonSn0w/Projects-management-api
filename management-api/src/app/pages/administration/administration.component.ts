@@ -1,35 +1,42 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { PagesService } from '../pages.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-administration',
   templateUrl: './administration.component.html',
   styleUrls: ['./administration.component.css']
 })
-export class AdministrationComponent implements OnInit {
+export class AdministrationComponent implements OnInit, OnDestroy {
 
   public users: any = [];
+  private subscriptions: Subscription[] = [];
 
-  constructor(
-    private PagesService: PagesService,
-  ) { }
+  constructor(private pagesService: PagesService) { }
 
   ngOnInit(): void {
     this.loadData();
   }
 
+  ngOnDestroy(): void {
+    this.subscriptions.forEach(subscription => subscription.unsubscribe());
+  }
+
   loadData() {
-    this.PagesService.loadUsers().subscribe(response => {
-      console.log(response);
-      this.users = response;
-    });
+    this.subscriptions.push(
+      this.pagesService.loadUsers().subscribe(response => {
+        console.log(response);
+        this.users = response;
+      })
+    );
   }
 
   deleteUser(user: any) {
-    this.PagesService.DeleteUser(user.id).subscribe(response => {
-      console.log('User deleted:', user);
-      this.loadData(); // Refresh the user list after deletion
-    });
+    this.subscriptions.push(
+      this.pagesService.DeleteUser(user.id).subscribe(response => {
+        console.log('User deleted:', user);
+        this.loadData();
+      })
+    );
   }
-  
 }
